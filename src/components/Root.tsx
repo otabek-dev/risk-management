@@ -1,5 +1,5 @@
-import { App } from '@/components/App.tsx';
-import { ErrorBoundary } from '@/components/ErrorBoundary.tsx';
+import { App } from '@/components/App.tsx'
+import { ErrorBoundary } from '@/components/ErrorBoundary.tsx'
 
 function ErrorBoundaryError({ error }: { error: unknown }) {
   return (
@@ -15,13 +15,13 @@ function ErrorBoundaryError({ error }: { error: unknown }) {
         </code>
       </blockquote>
     </div>
-  );
+  )
 }
 
 export function Root() {
   return (
     <ErrorBoundary fallback={ErrorBoundaryError}>
-        <App/>
+      <App />
     </ErrorBoundary>
-  );
+  )
 }
