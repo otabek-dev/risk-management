@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ResultDisplay from './ResultDisplay'
+import { Input } from '@telegram-apps/telegram-ui'
 
 const RiskCalculator: React.FC = () => {
   const [accountSize, setAccountSize] = useState<number>(10000);
@@ -31,6 +32,7 @@ const RiskCalculator: React.FC = () => {
           value={accountSize}
           onChange={(e) => setAccountSize(Number(e.target.value))}
         />
+        <Input header="Размер депозита ($)" placeholder="Размер депозита" />
       </div>
       <div>
         <label>Риск на сделку (%):</label>

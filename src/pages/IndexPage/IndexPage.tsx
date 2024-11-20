@@ -1,10 +1,11 @@
+import { Headline } from '@telegram-apps/telegram-ui'
 import RiskCalculator from './RiskCalculator'
 
 
 export  const IndexPage  = () => {
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Калькулятор риска на сделку</h1>
+    <div>
+      <Headline>Risk management calculator</Headline>
       <RiskCalculator />
     </div>
   );
