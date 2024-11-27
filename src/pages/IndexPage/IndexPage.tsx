@@ -1,10 +1,9 @@
-import RiskCalculator from './RiskCalculator'
-
+import RiskCalculator from './RiskCalculator';
 
 export const IndexPage = () => {
   return (
     <div>
       <RiskCalculator />
     </div>
-  )
-}
+  );
+};
